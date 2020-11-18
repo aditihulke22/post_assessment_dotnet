@@ -1,0 +1,16 @@
+<h1>List of IPOs</h1>
+<table class="table table-bordered table-hover">
+    <thead>
+      <tr>
+        <th>Company Name</th><th>Stock Exchange</th><th>Price Per Share</th><th>Total Shares</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let item of list">
+        <td>{{item.CompanyName}}</td>
+        <td>{{item.StockExchange}}</td>
+        <td>{{item.PricePerShare}}</td>
+        <td>{{item.TotalShares}}</td>
+      </tr>
+    </tbody>
+  </table>

@@ -1,0 +1,41 @@
+<div class="container">
+    
+
+    <table class="table table-bordered table-hover">
+        <tr>
+            <td>Select Company/Sector</td>
+            <td>
+                <select class="form-control" [(ngModel)]="type">
+                    <option value="company">Company</option>
+                    <option value="sector">Sector</option>
+                </select>
+            </td>
+        </tr>
+        <tr>
+            <td>Select Exchange</td>
+            <td>
+                <select class="form-control" [(ngModel)]="exchange">
+                    <option value="bse">BSE</option>
+                    <option value="nse">NSE</option>
+                </select>
+            </td>
+        </tr>
+        <tr>
+            <td>Company name</td>
+            <td>
+                <input type="text" class="form-control" [(ngModel)]="name">
+            </td>
+        </tr>
+        <tr>
+            <td>
+              <button class="btn-primary" (click)="Add()">Add another company</button>
+            </td>
+        </tr>
+        <tr>
+            <td>
+              <button class="btn-primary" (click)="Compare()">Generate map</button>
+            </td>
+        </tr>
+    </table>
+      
+</div>

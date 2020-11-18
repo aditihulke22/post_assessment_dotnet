@@ -1,0 +1,71 @@
+<div class="container">
+    
+
+    <table class="table table-bordered table-hover">
+        <tr>
+            <td>Company name</td>
+            <td>
+                <input type="text" class="form-control" [(ngModel)]="name">
+            </td>
+        </tr>
+        <tr>
+            <td>CEO name</td>
+            <td>
+                <input type="text" class="form-control" [(ngModel)]="ceo">
+            </td>
+        </tr>
+        <tr>
+            <td>Turnover</td>
+            <td>
+                <input type="text" class="form-control" [(ngModel)]="turnover">
+            </td>
+        </tr>
+        <tr>
+            <td>Board of Directors</td>
+            <td>
+                <input type="text" class="form-control" [(ngModel)]="boardofdirectors">
+            </td>
+        </tr>
+        <tr>
+            <td>Exchange</td>
+            <td>
+                <input type="text" class="form-control" [(ngModel)]="exchange">
+            </td>
+        </tr>
+        <tr>
+            <td>Sector</td>
+            <td>
+                <input type="text" class="form-control" [(ngModel)]="sector">
+            </td>
+        </tr>
+        <tr>
+            <td>Brief Description</td>
+            <td>
+                <input type="text" class="form-control" [(ngModel)]="description">
+            </td>
+        </tr>
+        <tr>
+            <td>Code in Stock Exchange</td>
+            <td>
+                <input type="text" class="form-control" [(ngModel)]="code">
+            </td>
+        </tr>
+        <tr>
+            <td>
+              <button class="btn-primary" (click)="Get()">Get</button>
+            </td>
+        </tr>
+        <tr>
+            <td>
+              <button class="btn-primary" (click)="Add()">Create</button>
+            </td>
+        </tr>
+        <tr>
+            <td>
+              <button class="btn-primary" (click)="Update()">Update</button>
+            </td>
+        </tr>
+    </table>
+      
+</div>
+

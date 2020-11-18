@@ -1,0 +1,17 @@
+<h1>List of Exchanges</h1>
+<h2><button class="btn-primary" (click)="Edit()">Add/Update</button></h2>
+<table class="table table-bordered table-hover">
+    <thead>
+      <tr>
+        <th>Name</th><th>Brief</th><th>Contact</th><th>Remarks</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let item of list">
+        <td>{{item.StockExchange1}}</td>
+        <td>{{item.Brief}}</td>
+        <td>{{item.Contact}}</td>
+        <td>{{item.Remarks}}</td>
+      </tr>
+    </tbody>
+  </table>

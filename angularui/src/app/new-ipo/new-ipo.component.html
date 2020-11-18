@@ -1,0 +1,65 @@
+<div class="container">
+    
+
+    <table class="table table-bordered table-hover">
+        <tr>
+            <td>Id</td>
+            <td>
+                <input type="text" class="form-control" [(ngModel)]="Id">
+            </td>
+        </tr>
+        <tr>
+            <td>Company Name</td>
+            <td>
+                <input type="text" class="form-control" [(ngModel)]="CompanyName">
+            </td>
+        </tr>
+        <tr>
+            <td>Stock Exchange</td>
+            <td>
+                <input type="text" class="form-control" [(ngModel)]="StockExchange">
+            </td>
+        </tr>
+        <tr>
+            <td>Price Per Share</td>
+            <td>
+                <input type="text" class="form-control" [(ngModel)]="PricePerShare">
+            </td>
+        </tr>
+        <tr>
+            <td>Total Shares</td>
+            <td>
+                <input type="text" class="form-control" [(ngModel)]="TotalShares">
+            </td>
+        </tr>
+        <tr>
+            <td>Open Date Time</td>
+            <td>
+                <input type="datetime-local" class="form-control" [(ngModel)]="OpenDateTime">
+            </td>
+        </tr>
+        <tr>
+            <td>Remarks</td>
+            <td>
+                <input type="text" class="form-control" [(ngModel)]="Remarks">
+            </td>
+        </tr>
+        <tr>
+            <td>
+              <button class="btn-primary" (click)="Get()">Get</button>
+            </td>
+        </tr>
+        <tr>
+            <td>
+              <button class="btn-primary" (click)="Add()">Create</button>
+            </td>
+        </tr>
+        <tr>
+            <td>
+              <button class="btn-primary" (click)="Update()">Update</button>
+            </td>
+        </tr>
+    </table>
+      
+</div>
+

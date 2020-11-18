@@ -1,0 +1,61 @@
+{
+  "ConnectionStrings": {
+    "DefaultConnection": "Server=(localdb)\\MSSQLLocalDB;Database=_CHANGE_ME;Trusted_Connection=True;MultipleActiveResultSets=true"
+  },
+  "ReRoutes": [
+    //Item
+    {
+      "DownstreamPathTemplate": "/api/ManageCompany/{catchAll}",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 61324
+        }
+      ],
+      "UpstreamPathTemplate": "/ManageCompany/{catchAll}"
+
+    },
+    // Order
+    {
+      "DownstreamPathTemplate": "/api/ManageExchange/{catchAll}",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 61324
+        }
+      ],
+      "UpstreamPathTemplate": "/ManageExchange/{catchAll}"
+
+    },
+    //Login
+    {
+      "DownstreamPathTemplate": "/api/IpoDetails/{catchAll}",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 61324
+        }
+      ],
+      "UpstreamPathTemplate": "/IpoDetails/{catchAll}"
+
+    },
+    {
+      "DownstreamPathTemplate": "/api/User/{catchAll}",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 50444
+        }
+      ],
+      "UpstreamPathTemplate": "/User/{catchAll}"
+
+    }
+  ],
+  "GlobalConfiguration": {
+    "BaseUrl": "http://localhost:50562"
+  }
+}
